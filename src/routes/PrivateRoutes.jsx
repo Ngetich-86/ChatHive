@@ -7,7 +7,7 @@ const PrivateRoutes = ({ children }) => {
     console.log(currentUser);
 
     if (!currentUser) {
-        return <Navigate to="/signup" replace={true} />;
+        return <Navigate to="/register" replace={true} />;
     }
     return children;
 }
